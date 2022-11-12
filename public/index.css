@@ -223,6 +223,7 @@ body.light-mode .video-bg:before {
   max-width: 400px;
   padding-left: 16px;
   border-radius: 4px;
+  justify-content: center;
 }
 .search-bar input {
   width: 100%;
@@ -905,9 +906,4 @@ body.light-mode .video-bg:before {
 .twitter {
   height: 30px;
   width: 35px;
-}
-
-.flex-center {
-  display: flex;
-  justify-content: center;
 }
