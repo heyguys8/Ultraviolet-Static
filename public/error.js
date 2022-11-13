@@ -3,7 +3,7 @@ const registerButton = document.querySelector(".register-sw");
 let registrarOpen = false;
 
 if (window.location.pathname.startsWith(__uv$config.prefix)) {
-  errorContainer.textContent += "The service worker is not registered. Click the button below to register the service worker.";
+  errorContainer.textContent += "何か問題がありましたら、開発チームまでご連絡ください。";
   registerButton.style.display = "block";
 }
 
@@ -12,12 +12,12 @@ function registrarResponse(response) {
     registerButton.style.display = "none";
     let span = document.createElement("span");
     span.className = "error-green";
-    span.textContent = "\n\nSuccess. Reloading now...";
+    span.textContent = "";
     errorContainer.appendChild(span);
     window.location.reload();
   }
   if (response == "failure")
-    errorContainer.textContent += "\n\nFailed to register service worker.";
+    errorContainer.textContent += "";
 }
 
 registerButton.onclick = () => {
