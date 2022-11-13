@@ -3,7 +3,7 @@ const registerButton = document.querySelector(".register-sw");
 let registrarOpen = false;
 
 if (window.location.pathname.startsWith(__uv$config.prefix)) {
-  errorContainer.textContent += "何か問題がありましたら、開発チームまでご連絡ください。";
+  errorContainer.textContent += "何か問題がありましたら、開発チームまで連絡お願いします。";
   registerButton.style.display = "block";
 }
 
