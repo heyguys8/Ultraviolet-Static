@@ -2,7 +2,7 @@ const stateContainer = document.getElementById("state");
 
 function finish(state) {
   stateContainer.textContent = state;
-  console.log("Registering ultraviolet service worker... " + state);
+  console.log("" + state);
   window.parent.postMessage(state, "*");
 }
 
@@ -12,11 +12,11 @@ try {
       scope: __uv$config.prefix,
     })
     .then(() => {
-      finish("success");
+      finish("");
     })
     .catch(() => {
-      finish("failure");
+      finish("");
     });
 } catch (e) {
-  finish("failure");
+  finish("");
 }
