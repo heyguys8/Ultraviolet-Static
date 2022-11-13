@@ -6,10 +6,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-    <title>Ultraviolet | Error</title>
+    <title>Wperboxy | エラー</title>
     <meta
       name="description"
-      content="Ultraviolet is a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers. Unblock sites today!"
+      content=""
     />
     <meta
       name="theme-color"
@@ -25,26 +25,16 @@
   <body>
     <div class="logo-wrapper left-margin">
       <h1>
-        Ultraviolet | Error
+        Wperboxy | エラー
       </h1>
     </div>
     <div class="desc left-margin">
       <p>
-        The server could not route your request.
+        サーバーにリクエストを送ることができませんでした。
       </p>
       <p class="error"></p>
-      <input type="button" class="register-sw" value="Register service worker">
+      <input type="button" class="register-sw" onclick="location.href='https://wperboxy.herokuapp.com/'" value="再度検索する">
     </div>
-
-    <footer>
-      <a
-        title="For privacy implications related to Ultraviolet."
-        href="https://github.com/titaniumnetwork-development/Ultraviolet/raw/main/LICENSE"
-        style="margin-left: auto"
-        >License</a
-      >
-      <span>Ultraviolet &copy; TN 2022</span>
-    </footer>
     <script src="uv/uv.bundle.js"></script>
     <script src="uv/uv.config.js"></script>
     <script src="error.js"></script>
